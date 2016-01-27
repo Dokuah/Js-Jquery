@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Assignment</title>
+	</head>
+	<body>
+		<h1>My lil Js test</h1>
+	
+		<button id="buts" onClick = toll() > Click me </button>
+		<div id="demo"></div> <br/>
+		<div id="day"></div> <br/>
+		<div id = "mais" ></div>
+		
+		<script>
+			
+			function toll(){
+				
+				var date = new  Date();
+				var day = date.getDay();
+				var time = date.toString().split(" ")[4];
+				var time_string = "Time is " + time ;
+				var hour = date.getHours();
+				var second = date.getSeconds();
+				var minutes = date.getMinutes();
+				if (is_fabonacci(hour) || is_fabonacci(second) || is_fabonacci(minutes)){
+					time_string = time_string + " is fabonacci" ;
+				}
+
+
+
+
+				var month = date.getMonth();
+				console.log(day) ;
+				var day_string = " ";
+				
+
+				if (day == 4 || day == 5 || day == 6){
+					day_string = "PARTY DAY"
+				}
+
+				if (day == 1 || day == 2 || day == 3){
+					day_string = day.toString();
+				}
+
+				
+				document.getElementById("demo").innerHTML = time_string ;
+				document.getElementById("day").innerHTML = "Day of week " + day_string ;
+				document.getElementById("mais").innerHTML = "Month of the year = "+
+				 date.toString().split(" ")[1] + ", favourite season is Harmattan"  ;
+				
+			}
+
+			function is_fabonacci(number){
+				first = 0;
+				next = 1;
+				if (first == number){
+					return true;
+				}
+
+				current = next;
+				while(current < number ){
+					console.log(current)
+					current = next + first;
+					if (current == number){
+						return true;
+					}
+					first = next;
+					next = current
+                }
+
+
+
+			}
+			
+
+		</script>
+		</body>
+		</html>		
+
+
+				
+
+
+

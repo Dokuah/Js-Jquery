@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shrink</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+.one{
+	width: 500px;
+	height: 550px;
+	margin: 40px;
+	border: solid;
+}
+
+.two{
+	width: 400px;
+	height: 450px;
+	margin: 40px;
+	border:  5px solid;
+}
+
+.three{
+	width: 300px;
+	height: 350px;
+	margin: 40px;
+	border: 10px solid;
+}
+
+.four{
+	width: 200px;
+	height: 250px;
+	margin: 40px;
+	border: 20px solid;
+}
+
+.four1{
+  width: 100px;
+  height: 125px;
+}
+
+.five{
+	width: 100px;
+	height: 150px;
+	margin: 40px;
+	border: 25px solid;
+	background-color: #00CED1;
+}
+.five1{
+	width: 50px;
+	height: 75px;
+}
+
+.box{
+	margin: 40px;
+}
+
+  </style>
+   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  
+  <div class="col-sm-6">
+  	<div class="one">
+		<div class="two">
+  			<div class="three">
+  				<div class="four" "four1">
+  					<div class="five" "five1"></div>
+				</div>
+			</div>
+  		</div>
+  	</div>
+  	</div>
+  
+  <div class="box" "col-sm-6">
+  	<form id="butts">
+  	<button id="uno">1</button>
+  	<br>
+  	<button id="dos">2</button>
+  	<br>
+  	<button id="tres">3</button>
+  	<br>
+  	<button id="quatro">4</button>
+  	<br>
+  	<button id="cinco">5</button>
+  </form>
+  </div>
+
+  <script type="text/javascript">
+$( document ).ready(function() {
+$('.four').click(function){
+$( ".four" ).toggleClass( '.four1' );
+})
+});
+
+
+
+</script>
+</body>
+</html>
